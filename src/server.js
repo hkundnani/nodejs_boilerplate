@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev"));
 
-app.use("/", userRouter);
+app.use("/api", userRouter);
 
 export const start = async () => {
   try {
